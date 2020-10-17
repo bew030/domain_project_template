@@ -1,0 +1,8 @@
+{
+    "num_iterations": 300, 
+    "infected_solution":"isolation",
+    "time_until_infection_known": 1, 
+    "time_in_isolation": 5, 
+    "probability_infection": 0.2,
+    "environment": "University of California, San Diego"
+}
