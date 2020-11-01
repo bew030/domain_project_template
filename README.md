@@ -35,5 +35,16 @@ The research paper we’re replicating is an observational study that studies a 
 After the initial participant began to experience symptoms and received the diagnosis of COVID-19, the rest of the participants began to get tested. It was found that none of the individuals in bus one were infected but 24 individuals in bus two were infected (leading to a 35.3% infection rate). Surprisingly, of the 172 individuals who did not travel by bus after the event, only 7 were infected (leading to a 4% infection rate). Even more surprising was that the 24 individuals that were infected on bus two were scattered amongst the bus, rather than grouped closely together. A visual representation of these results can be seen below in Figure 1. 
 As mentioned within the research paper, the much larger infection rate within the bus along with the lack of a significantly increased risk depending on seat location suggests that the airborne spread of the virus most likely plays a significant role in the transmission of the disease. This data is extremely helpful in our investigation and will help us better simulate the airborne transmission of the disease within a small location. By simulating the transmission of COVID-19 within the air based on these findings, we can hopefully develop an accurate simulation that can then later be applied to larger areas. 
 
+<p align="center">
+	<img src="https://github.com/bew030/domain_project_template/blob/main/src/images/results.png" />
+</p>
 
 # Visualizations 
+An example of a timelapse of the steps can be seen here. 2 people are initially infected and has a 50% chance of breathing, 30% chance of coughing, and 20% chance of sneezing. If they breath, people 1 foot away have a 5% chance of being infected. If they cough, people 2 feet away have a 5% chance of being infected. If they sneeze, people 6 feet away have a 5% chance of being infected. Each step is a 'breath' action. 
+
+<p align="center">
+	<img src="https://github.com/bew030/domain_project_template/blob/main/src/images/gif_of_model.gif" />
+</p>
+
+# Work Division
+Bernard worked on the packaging, github organizing and the visualizations. Ziqian worked on the agent and environment modeling. 
