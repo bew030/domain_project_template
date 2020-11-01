@@ -1,7 +1,10 @@
-This is where I would include the duplication reference for agent based modeling. Here are some of the references: 
+These are the following research papers that are referenced throughout our work: 
 
-https://www.youtube.com/watch?v=gxAaO2rsdIs&feature=emb_logo
+1. The replication paper that's being duplicated 
 
-https://sites.google.com/view/covid19abm-dsc180/readings-and-tasks
+https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2770172
 
-https://blog.singularitynet.io/agent-based-modeling-for-pandemics-the-covid-19-simulation-summit-part-one-57f274abd9b2
+2. Articles about the distance that droplets spread
+
+https://pubmed.ncbi.nlm.nih.gov/32569870/
+
