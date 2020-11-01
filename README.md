@@ -1,8 +1,3 @@
-# This is the template for Spatial ABM for School Reopening
-
-This repository contains our files for or simulation of our research paper: https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2770172. Currently all our work is done in an exploratory notebook, but the methods are written and described. Examples can be found [here](https://github.com/bew030/domain_project_template/blob/main/notebooks/Example%20Notebook.ipynb). A visualization of our findings can also be found [here](https://github.com/bew030/domain_project_template/blob/main/src/visualization/png_to_gif%20(1).gif). Our goal is to get everything into a runnable python file in the future.
-
-
 # Overview 
 _Created by Bernard Wong and Ziqian Cui_
 
