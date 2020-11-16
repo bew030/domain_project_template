@@ -35,6 +35,3 @@ An example of a timelapse of the steps can be seen here. 2 people are initially 
 <p align="center">
 	<img src="https://github.com/bew030/busABM/blob/master/images_for_readme/images/gif_of_model.gif" />
 </p>
-
-# Work Division
-Bernard worked on the packaging, github organizing and the visualizations. Ziqian worked on the agent and environment modeling. 
