@@ -1,3 +1,35 @@
-{   
-    "STUB CODE"
+{
+    "targets": [
+        {
+            "target" : 1,
+            "Coughing_Probability" : 0.1,
+            "Sneezing_Probability" : 0.05,
+            
+            "Breath_distance" : 1,
+            "Cough_distance" : 3,
+            "Sneeze_distance" : 6,
+            
+            "Infection_Probability" : 0.6
+        },
+        {
+            "target" : 2,
+            "Num_rows_left:" : 3,
+            "Num_rows_middle" : 1,
+            "Num_rows_right" : 2,
+            
+            "Distance_between_seats" : 1
+            
+            "Num_people_initially_infected" : 3
+        }
+        {
+            "target" : 3,
+            "Trip_duration:" : 50,
+        }
+        {
+            "target" : 4,
+            "Type_export:" : "gif",
+            "Colored" : true
+        }
+        
+        ]
 }
