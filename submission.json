@@ -1,7 +1,7 @@
 {
-    "config": ["data_params.json", "model_params.json"],
-    "build": "run.py",
+    "config": ["config/abm_params.json", "config/model_params.json", "config/visualization_params.json"], 
+    "build": "run.py", 
     "library": ["src"],
     "notebook": ["notebooks/Example Notebook.ipynb"], 
-    "targets": ["target1", "target2"]
+    "targets": ["data/raw", "data/timelapse"]
 }

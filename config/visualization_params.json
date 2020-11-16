@@ -1,4 +1,4 @@
 {
-    "image_fp":,
-    "gif_fp":
+    "input_source": "data/raw/",
+    "output_source": "data/timelapse/"
 }

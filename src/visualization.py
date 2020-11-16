@@ -92,7 +92,7 @@ def visualize_step_model(model, breathes_per_min, trip_duration, destination):
         not_infected.plot(c="green", label = "uninfencted", ax = basemap)
         minute_amount = -(-x // breathes_per_min)
         basemap.legend(bbox_to_anchor=(1.05, 1))
-        basemap.title.set_text('Infections on the Bus: Minute ' + str(minute_amount) + 'Step '+ str(x+1))
+        basemap.title.set_text('Infections on the Bus: Minute ' + str(minute_amount) + ', Step '+ str(x+1))
         basemap.set_xlabel('Seat Column')
         basemap.set_ylabel('Seat Row')
         basemap.set_xticks(list(range(0,model.max_columns,model.seat_dist)))
