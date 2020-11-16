@@ -17,7 +17,7 @@
             "Num_rows_middle" : 1,
             "Num_rows_right" : 2,
             
-            "Distance_between_seats" : 1
+            "Distance_between_seats" : 1,
             
             "Num_people_initially_infected" : 3
         }
@@ -30,6 +30,5 @@
             "Type_export:" : "gif",
             "Colored" : true
         }
-        
         ]
 }
