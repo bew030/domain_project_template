@@ -30,6 +30,7 @@ import glob
 import os
 
 import re
+import shutil
 
 def specific_step_model(model, breath_num): 
     '''
@@ -80,8 +81,8 @@ def visualize_step_model(model, breathes_per_min, trip_duration, main_folder, de
     basemap.set_yticks(list(range(0,model.max_rows,model.seat_dist)))
     
     for files in os.listdir():
-        if files == main_data:
-            shutil.rmtree(main_data)
+        if files == main_folder:
+            shutil.rmtree(main_folder)
 
     os.makedirs(os.path.split(destination)[0], exist_ok=True)
 
