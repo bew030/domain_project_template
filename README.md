@@ -10,7 +10,7 @@ There's a variety of packages that you need to import. A dockerfile has been inc
 
 1.SSH into DSMLP Servers using <user>@dsmlp-login.ucsd.edu which can be done with the command 
 	
-	```
+	```sh
 	ssh <user>@dsmlp-login.ucsd.edu
 	```
 
