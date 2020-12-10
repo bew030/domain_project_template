@@ -6,6 +6,7 @@ COVID-19 has drastically changed the way we live our lives. As of October 2020, 
 # Navigating the Repository 
 There are a lot of folders within the repository. If you're interested in seeing our project overview document, it can be found in the references folder or can be found [here](https://github.com/bew030/domain_project_template/blob/main/references/SIMULATING%20AIRBORNE%20TRANSMISSION%20OF%20SARS-CoV-2%20AMONGST%20BUS%20RIDERS%20-%20checkpoint%201.pdf). A list of our references along with the paper we're replicating can also be found in the references folder or can be found [here](https://github.com/bew030/domain_project_template/blob/main/references/references.md). 
 
+# Setting Up the Environment
 There's a variety of packages that you need to import. A dockerfile has been included in the repository which includes all the necessary set up that you need. There are a few steps for using the repository if you're a UCSD user that has access to DSMLP servers. 
 
 1. SSH into DSMLP Servers using <user>@dsmlp-login.ucsd.edu which can be done with the command 
