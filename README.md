@@ -61,12 +61,17 @@ python run.py abm model visualize
 
 Everything is based off of the [configurations](https://github.com/bew030/domain_project_template/tree/main/config) which can be modified to the user's liking.
 
-Inputting abm will create an agent based model based off of the parameters in [abm_params.json](https://github.com/bew030/domain_project_template/blob/main/config/abm_params.json). 
+- abm will create an agent based model based off of the parameters in [abm_params.json](https://github.com/bew030/domain_project_template/blob/main/config/abm_params.json). 
 
-model will create a folder of images which represent the simulation of the model based off of the parameters in [model_params.json](https://github.com/bew030/domain_project_template/blob/main/config/model_params.json). 
+- model will create a folder of images which represent the simulation of the model based off of the parameters in [model_params.json](https://github.com/bew030/domain_project_template/blob/main/config/model_params.json). 
 
-visualize will create a .gif of images which best represent the simulation of the model and is based off of the parameters in [visualization_params.json](https://github.com/bew030/domain_project_template/blob/main/config/visualization_params.json).
+- visualize will create a .gif of images which best represent the simulation of the model and is based off of the parameters in [visualization_params.json](https://github.com/bew030/domain_project_template/blob/main/config/visualization_params.json).
 
+you may also run 
+```python 
+python run.py test
+```
+to run abm, model, and visualize. 
 
 The code is divided into three groups, [passengerBusABM](https://github.com/bew030/domain_project_template/blob/main/src/passengerBusABM.py) which contains the class that creates the agents and the environments, [visualization](https://github.com/bew030/domain_project_template/blob/main/src/visualization.py) which contains methods that create step by step images simulating the agent based model, and [timelapse](https://github.com/bew030/domain_project_template/blob/main/src/timelapse.py) which creates the final timelapse GIF visualization of the agent based model.
 
