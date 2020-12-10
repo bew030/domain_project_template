@@ -29,6 +29,11 @@ def main(targets):
 
     if 'visualize' in targets:
         timelapse_step_model(**visualization_config)
+        
+    if 'test' in targets: 
+        busABM = NaiveModel(busAgent, **abm_config)
+        visualize_step_model(busABM, **model_config)
+        timelapse_step_model(**visualization_config)
 
 
 
