@@ -26,6 +26,18 @@ There's a variety of packages that you need to import. A dockerfile has been inc
 	```
 	where <dockerhub-repo> is replaced with bew030/dsc180a_docker
 	
+4. Change into the repository with the command 
+	```shell
+	cd domain_project_template
+	```
+	
+5. Enter in the command 
+	```shell
+	export PYTHONNOUSERSITE=NONE
+	```
+
+6. Run python code as normal based on the next section, Using the Code
+	
 
 
 You can use python run.py to run the file based off of the default configurations in the config file. If you'd just like to see what the code looks like, you can look at our notebook [here](https://github.com/bew030/domain_project_template/blob/main/notebooks/Example%20Notebook.ipynb).
