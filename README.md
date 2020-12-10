@@ -18,13 +18,13 @@ There's a variety of packages that you need to import. A dockerfile has been inc
 	```shell
 	git clone <repository-id> 
 	```
-	where <repository-id> is replaced with https://github.com/bew030/domain_project_template.git
+	where repository-id is replaced with https://github.com/bew030/domain_project_template.git
 	
 3. Launch a container with
 	```shell
 	launch.sh -i <dockerhub-repo>
 	```
-	where <dockerhub-repo> is replaced with bew030/dsc180a_docker
+	where dockerhub-repo is replaced with bew030/dsc180a_docker
 	
 4. Change into the repository with the command 
 	```shell
