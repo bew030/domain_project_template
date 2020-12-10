@@ -37,7 +37,7 @@ There's a variety of packages that you need to import. A dockerfile has been inc
 	export PYTHONNOUSERSITE=NONE
 	```
 
-6. Run python code as normal based on the next section, Using the Code
+6. Run python code as normal based on the next section, __Using the Code__
 
 You can use python run.py to run the file based off of the default configurations in the config file. If you'd just like to see what the code and methods looks like, you can also look at our notebook [here](https://github.com/bew030/domain_project_template/blob/main/notebooks/Example%20Notebook.ipynb).
 
