@@ -10,9 +10,9 @@ There's a variety of packages that you need to import. A dockerfile has been inc
 
 1.SSH into DSMLP Servers using <user>@dsmlp-login.ucsd.edu which can be done with the command 
 	
-	```sh
-	ssh <user>@dsmlp-login.ucsd.edu
-	```
+```python
+python run.py abm model visualize
+```
 
 You can use python run.py to run the file based off of the default configurations in the config file. If you'd just like to see what the code looks like, you can look at our notebook [here](https://github.com/bew030/domain_project_template/blob/main/notebooks/Example%20Notebook.ipynb).
 
