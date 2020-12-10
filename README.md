@@ -74,3 +74,9 @@ An example of a timelapse of the steps can be seen here. 2 people are initially 
 <p align="center">
 	<img src="https://github.com/bew030/busABM/blob/master/images_for_readme/images/gif_of_model.gif" />
 </p>
+
+# Badges 
+[![GitHub issues](https://img.shields.io/github/issues/bew030/domain_project_template?color=purple)](https://github.com/bew030/domain_project_template/issues)
+[![GitHub forks](https://img.shields.io/github/forks/bew030/domain_project_template?color=orange)](https://github.com/bew030/domain_project_template/network)
+[![GitHub stars](https://img.shields.io/github/stars/bew030/domain_project_template)](https://github.com/bew030/domain_project_template/stargazers)
+[![HitCount](http://hits.dwyl.io/bew030/bew030/domain_project_template.svg)](http://hits.dwyl.io/bew030/domain_project_template)
