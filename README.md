@@ -9,7 +9,8 @@ There are a lot of folders within the repository. If you're interested in seeing
 There's a variety of packages that you need to import. A dockerfile has been included in the repository which includes all the necessary set up that you need. There are a few steps for using the repository if you're a UCSD user that has access to DSMLP servers. 
 
 1.SSH into DSMLP Servers using <user>@dsmlp-login.ucsd.edu which can be done with the command 
-	```shell
+	
+	```
 	ssh <user>@dsmlp-login.ucsd.edu
 	```
 
