@@ -37,10 +37,8 @@ There's a variety of packages that you need to import. A dockerfile has been inc
 	```
 
 6. Run python code as normal based on the next section, Using the Code
-	
 
-
-You can use python run.py to run the file based off of the default configurations in the config file. If you'd just like to see what the code looks like, you can look at our notebook [here](https://github.com/bew030/domain_project_template/blob/main/notebooks/Example%20Notebook.ipynb).
+You can use python run.py to run the file based off of the default configurations in the config file. If you'd just like to see what the code and methods looks like, you can also look at our notebook [here](https://github.com/bew030/domain_project_template/blob/main/notebooks/Example%20Notebook.ipynb).
 
 # Using the Code 
 
@@ -50,7 +48,16 @@ run the following code in your Terminal:
 python run.py abm model visualize
 ```
 
-The packages are divided into three things, [busABM](https://github.com/bew030/domain_project_template/tree/main/src/packages/busABM) which contains the class that creates the agents and the environments and the [visualizer](https://github.com/bew030/domain_project_template/tree/main/src/packages/visualizer) which contains methods that help visualize interactions and steps. 
+Everything is based off of the [configurations](https://github.com/bew030/domain_project_template/tree/main/config) which can be modified to the user's liking.
+
+Inputting abm will create an agent based model based off of the parameters in [abm_params.json](https://github.com/bew030/domain_project_template/blob/main/config/abm_params.json). 
+
+model will create a folder of images which represent the simulation of the model based off of the parameters in [model_params.json](https://github.com/bew030/domain_project_template/blob/main/config/model_params.json). 
+
+visualize will create a .gif of images which best represent the simulation of the model and is based off of the parameters in [visualization_params.json](https://github.com/bew030/domain_project_template/blob/main/config/visualization_params.json).
+
+
+The code is divided into three groups, [passengerBusABM](https://github.com/bew030/domain_project_template/blob/main/src/passengerBusABM.py) which contains the class that creates the agents and the environments, [visualization](https://github.com/bew030/domain_project_template/blob/main/src/visualization.py) which contains methods that create step by step images simulating the agent based model, and [timelapse](https://github.com/bew030/domain_project_template/blob/main/src/timelapse.py) which creates the final timelapse GIF visualization of the agent based model. 
 
 # The Data 
 The research paper we’re replicating is an observational study that studies a worship event and the bus travel that followed shortly after. The event had initially started off with 300 individuals with only one having COVID-191. After the event, 128 of the 300 individuals travelled by bus, with 60 participants going in bus one and 68 going in bus two. Both busses had relatively similar conditions: the air conditioning system was on a heating and recirculating mode, weather conditions were the same, and passengers remained seated during the whole duration on both busses. 
