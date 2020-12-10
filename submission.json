@@ -1,7 +1,4 @@
 {
-    "config": ["config/abm_params.json", "config/model_params.json", "config/visualization_params.json"], 
-    "build": "run.py", 
-    "library": ["src"],
-    "notebook": ["notebooks/Example Notebook.ipynb"], 
-    "targets": ["data/raw", "data/timelapse"]
+    "dockerhub-id": "bew030/dsc180a_docker:latest",
+    "repository-id": "https://github.com/bew030/domain_project_template.git"
 }
