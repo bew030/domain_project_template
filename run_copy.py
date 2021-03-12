@@ -59,10 +59,10 @@ def main(targets):
     ##########################
     visualization_config = parser_busPath['VISUALIZATION_PARAMS']
 
-    visualization_params_dict = {}
+    visualization_config_dict = {}
 
-    visualization_params_dict["input_source"] = visualization_config["input_source"]
-    visualization_params_dict["output_source"] = visualization_config["output_source"]
+    visualization_config_dict["input_source"] = visualization_config["input_source"]
+    visualization_config_dict["output_source"] = visualization_config["output_source"]
     ##########################
 
     # makes the bus-passenger ABM
@@ -75,7 +75,10 @@ def main(targets):
     if 'visualize' in targets:
         timelapse_step_model(**visualization_config_dict)
 
-
+    if 'test' in targets:
+        busABM = NaiveModel(busAgent, **abm_config_dict)
+        visualize_step_model(busABM, **model_config_dict)
+        timelapse_step_model(**visualization_config_dict)
 
       
         

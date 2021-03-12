@@ -56,7 +56,7 @@ def specific_step_model(model, breath_num):
     basemap.set_xticks(list(range(0,model.max_columns,model.seat_dist)))
     basemap.set_yticks(list(range(0,model.max_rows,model.seat_dist)))
 
-def visualize_step_model(model, breathes_per_min, trip_duration, main_folder, destination): 
+def visualize_step_model(model, breathes_per_min, trip_duration, destination): 
     '''
     function that lets us timelpase the model. We are assuming that there is a simulation_images folder that allows
     you to save all the images. IT IS BEST TO ONLY RUN THIS FUNCTION ONCE AND THEN CLEAR THE FOLDER OF ALL THE IMAGES.
@@ -80,9 +80,9 @@ def visualize_step_model(model, breathes_per_min, trip_duration, main_folder, de
     basemap.set_xticks(list(range(0,model.max_columns,model.seat_dist)))
     basemap.set_yticks(list(range(0,model.max_rows,model.seat_dist)))
     
-    for files in os.listdir():
-        if files == main_folder:
-            shutil.rmtree(main_folder)
+    #for files in os.listdir():
+    #    if files == main_folder:
+    #        shutil.rmtree(main_folder)
 
     os.makedirs(os.path.split(destination)[0], exist_ok=True)
 
