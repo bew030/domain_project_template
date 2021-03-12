@@ -16,18 +16,13 @@ from timelapse import timelapse_step_model
 
 def main(targets): 
 
-    abm_config = json.load(open('config/abm_params.json'))
-    print(abm_config)
-    model_config = json.load(open('config/model_params.json'))
-    visualization_config = json.load(open('config/visualization_params.json'))
-
-
-    # test config parser 
+    # config parser 
     parser_busPath = configparser.ConfigParser()
     parser_busPath.read('./config/params.ini')
-    abm_config = parser_busPath['ABM_PARAMS']
-    
+
     ##########################
+    abm_config = parser_busPath['ABM_PARAMS']
+
     abm_config_dict = {}
 
     abm_config_dict["breath_prob"] = float(abm_config["breath_prob"])
@@ -46,10 +41,28 @@ def main(targets):
 
     abm_config_dict["num_row"] = int(abm_config["num_row"])
 
-    abm_config_dict["dist_bw_seats"] = (abm_config["dist_bw_seats"])
+    abm_config_dict["dist_bw_seats"] = int(abm_config["dist_bw_seats"])
 
-    abm_config_dict["num_infected"] = (abm_config["num_infected"])
-    print(abm_config_dict)
+    abm_config_dict["num_infected"] = int(abm_config["num_infected"])
+    ##########################
+
+    ##########################
+    model_config = parser_busPath['MODEL_PARAMS']
+
+    model_config_dict = {}
+
+    model_config_dict["breathes_per_min"] = int(model_config["breathes_per_min"])
+    model_config_dict["trip_duration"] = int(model_config["trip_duration"])
+    model_config_dict["destination"] = model_config["destination"]
+    ##########################
+    
+    ##########################
+    visualization_config = parser_busPath['VISUALIZATION_PARAMS']
+
+    visualization_params_dict = {}
+
+    visualization_params_dict["input_source"] = visualization_config["input_source"]
+    visualization_params_dict["output_source"] = visualization_config["output_source"]
     ##########################
 
     # makes the bus-passenger ABM
@@ -57,10 +70,10 @@ def main(targets):
         busABM = NaiveModel(busAgent, **abm_config_dict)
 
     if 'model' in targets: 
-        visualize_step_model(busABM, **model_config)
+        visualize_step_model(busABM, **model_config_dict)
 
     if 'visualize' in targets:
-        timelapse_step_model(**visualization_config)
+        timelapse_step_model(**visualization_config_dict)
 
 
 
