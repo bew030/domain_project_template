@@ -5,6 +5,7 @@
 import sys
 import json
 import pandas as pd
+import configparser
 
 sys.path.insert(0, 'src')
 from passengerBusABM import busAgent, NaiveModel
@@ -16,6 +17,7 @@ from timelapse import timelapse_step_model
 def main(targets): 
 
     abm_config = json.load(open('config/abm_params.json'))
+    print(abm_config)
     model_config = json.load(open('config/model_params.json'))
     visualization_config = json.load(open('config/visualization_params.json'))
 
