@@ -22,9 +22,39 @@ def main(targets):
     visualization_config = json.load(open('config/visualization_params.json'))
 
 
+    # test config parser 
+    parser_busPath = configparser.ConfigParser()
+    parser_busPath.read('./config/params.ini')
+    abm_config = parser_busPath['ABM_PARAMS']
+    
+    ##########################
+    abm_config_dict = {}
+
+    abm_config_dict["breath_prob"] = float(abm_config["breath_prob"])
+    abm_config_dict["cough_prob"] = float(abm_config["cough_prob"])
+    abm_config_dict["sneeze_prob"] = float(abm_config["sneeze_prob"])
+
+    abm_config_dict["breath_dist"] = int(abm_config["breath_dist"])
+    abm_config_dict["cough_dist"] = int(abm_config["cough_dist"])
+    abm_config_dict["sneeze_dist"] = int(abm_config["sneeze_dist"])
+
+    abm_config_dict["prob_infected"] = float(abm_config["prob_infected"])
+
+    abm_config_dict["num_col_left"] = int(abm_config["num_col_left"])
+    abm_config_dict["num_col_mid"] = int(abm_config["num_col_mid"])
+    abm_config_dict["num_col_right"] = int(abm_config["num_col_right"])
+
+    abm_config_dict["num_row"] = int(abm_config["num_row"])
+
+    abm_config_dict["dist_bw_seats"] = (abm_config["dist_bw_seats"])
+
+    abm_config_dict["num_infected"] = (abm_config["num_infected"])
+    print(abm_config_dict)
+    ##########################
+
     # makes the bus-passenger ABM
     if 'abm' in targets: 
-        busABM = NaiveModel(busAgent, **abm_config)
+        busABM = NaiveModel(busAgent, **abm_config_dict)
 
     if 'model' in targets: 
         visualize_step_model(busABM, **model_config)
